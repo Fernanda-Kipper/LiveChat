@@ -1,31 +1,18 @@
 import React, { useState } from 'react';
 import './styles/App.css';
 
-import firebase from 'firebase/app';
+import firebase from './utils/firebase';
 import 'firebase/firestore';
 import 'firebase/auth';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-firebase.initializeApp({
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASURUMENT
-})
-
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
-
 function App() {
-
   const [user] = useAuthState(auth);
-
   return (
     <div className="AppContent">
       <header>
