@@ -1,7 +1,7 @@
 .AppContent{
     display: flex;
     align-items: center;
-    background-color: #F7FFF6;
+    background-color: #ffffff;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
@@ -41,14 +41,23 @@
 }
 
 .AppContent section .sign-in{
-    height: 6vh;
+    height: 8vh;
     border: none;
     border-radius: 5px;
     padding: 8px;
+    margin: auto;
 
-    background-color: #ffffff;
-    box-shadow: 5px #000000;
+    background-color: #dddddd;
+
+    display: flex;
+    align-items: center;
+
     cursor: pointer;
+}
+
+.AppContent section .sign-in img{
+    height: 30px;
+    width: 30px;
 }
 
 .AppContent section main{
@@ -66,6 +75,7 @@
 
 .AppContent section main .message .messageHeader{
     display: flex;
+    align-items: center;
 }
 
 .AppContent section main .message .messageHeader img{
@@ -81,6 +91,17 @@
 
 .AppContent section main .message.sent{
     background-color: #e6e6e6;
+    width: 50vw;
+    align-self: flex-end;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.AppContent section main .message.received{
+    background-color: #BCEBCB;
+    width: 50vw;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 .AppContent section main .message p{

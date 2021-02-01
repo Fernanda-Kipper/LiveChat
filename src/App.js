@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles/App.css';
+import googleIcon from './assets/google.svg'
 
 import firebase from './utils/firebase';
 import 'firebase/firestore';
@@ -35,7 +36,8 @@ function SignIn() {
 
   return (
     <>
-      <button className="sign-in" onClick={signInWithGoogle}>Faça Login com Google</button>
+      <button className="sign-in" onClick={signInWithGoogle}> 
+      <img src={googleIcon} alt="ícone do google"/>Faça Login com Google</button>
     </>
   )
 
@@ -56,7 +58,7 @@ function SignOut(){
 
 function ChatRoom() {
   const messagesRef = firestore.collection('messages');
-  const query = messagesRef.orderBy('createdAt').limit(30);
+  const query = messagesRef.orderBy('createdAt');
 
   const [messages] = useCollectionData(query, { idField: 'id' });
 
