@@ -1,0 +1,122 @@
+.AppContent{
+    display: flex;
+    align-items: center;
+    background-color: #F7FFF6;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.AppContent header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #BCEBCB;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+    padding: 10px;
+}
+
+.AppContent header .sign-out{
+    height: 6vh;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.AppContent header h1{
+    color: black;
+    font-weight: 500;
+}
+
+.AppContent section{
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+
+.AppContent section .sign-in{
+    height: 6vh;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+
+    background-color: #ffffff;
+    box-shadow: 5px #000000;
+    cursor: pointer;
+}
+
+.AppContent section main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+
+    height: 92%;
+}
+
+.AppContent section main .message{
+    border-bottom: 0.2 solid #000;
+}
+
+.AppContent section main .message .messageHeader{
+    display: flex;
+}
+
+.AppContent section main .message .messageHeader img{
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+
+.AppContent section main .message .messageHeader h2{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.AppContent section main .message.sent{
+    background-color: #e6e6e6;
+}
+
+.AppContent section main .message p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 3vw;
+}
+
+.AppContent section form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    background-color: #ffffff;
+    
+    padding: 5px;
+}
+
+.AppContent section form input{
+    width: 50vw;
+    height: 6vh;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.AppContent section form button{
+    height: 6vh;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 8px;
+
+    background-color: #45814a;
+    cursor: pointer;
+}
