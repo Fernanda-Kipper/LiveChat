@@ -71,7 +71,7 @@ function SignOut(){
 
 function ChatRoom() {
   const messagesRef = firestore.collection('messages');
-  const query = messagesRef.orderBy('createdAt').limit(20);
+  const query = messagesRef.orderBy('createdAt').limit(10);
 
   const [messages] = useCollectionData(query, { idField: 'id' });
 
@@ -103,7 +103,7 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Fale o que está pensando" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Fale algo legal :)" />
 
       <button type="submit" disabled={!formValue}>
         <img src={sendImg} alt="Enviar"/>
