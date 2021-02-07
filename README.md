@@ -1,5 +1,8 @@
-# LiveChat 📡
-LiveChat construído em React utilizando serviços Firebase. 
+<img src="./src/assets/logoBlack.svg" width="400">
+
+# O projeto 📡
+
+O Projeto consiste em um Live Chat de canal único construído em React utilizando serviços Firebase. 
 
 ## Como foi feito? 🔎
 
