@@ -7,6 +7,8 @@
     height: 100vh;
 }
 
+/* app header */
+
 .AppContent header{
     display: flex;
     align-items: center;
@@ -29,25 +31,50 @@
     cursor: pointer;
 }
 
-.AppContent header h1{
-    color: black;
-    font-weight: 500;
+.AppContent header img{
+    width: 100px;
+    height: 50px;
 }
+
+/* app landing page */
 
 .AppContent section{
     width: 100%;
     height: 100%;
-    margin-top: 80px;
 }
 
-.AppContent section .sign-in{
+.AppContent section .landing{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #BCEBCB;
+}
+
+.AppContent section .landing img{
+    width: 70%;
+}
+
+.AppContent section .landing h2{
+    text-align: center;
+    font-size: 1.3rem;
+
+    margin: 10px;
+
+    color: #7d7d7d;
+}
+
+.AppContent section .landing .sign-in{
     height: 8vh;
     border: none;
     border-radius: 5px;
     padding: 8px;
-    margin: auto;
+    margin-top: 10px;
 
-    background-color: #dddddd;
+    background-color: #fff;
 
     display: flex;
     align-items: center;
@@ -55,10 +82,12 @@
     cursor: pointer;
 }
 
-.AppContent section .sign-in img{
+.AppContent section .landing .sign-in img{
     height: 30px;
     width: 30px;
 }
+
+/* app chat */
 
 .AppContent section main{
     display: flex;
@@ -70,7 +99,10 @@
 }
 
 .AppContent section main .message{
-    border-bottom: 0.2 solid #000;
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px;
 }
 
 .AppContent section main .message .messageHeader{
@@ -80,35 +112,44 @@
 
 .AppContent section main .message .messageHeader img{
     border-radius: 50px;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 
 .AppContent section main .message .messageHeader h2{
     font-weight: 300;
-    font-size: 16px;
+    font-size: 13px;
+}
+
+.AppContent section main .message .messageContent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-radius: 20px;
+
+    min-height: 30px;
+    width: 40vw;
+}
+
+.AppContent section main .message .messageContent p{
+    font-size: 14px;
+    margin-left: 5px;
 }
 
 .AppContent section main .message.sent{
-    background-color: #e6e6e6;
-    width: 50vw;
     align-self: flex-end;
-    border-radius: 10px;
-    margin: 5px;
 }
 
-.AppContent section main .message.received{
-    background-color: #BCEBCB;
-    width: 50vw;
-    border-radius: 10px;
-    margin: 5px;
+.AppContent section main .message.sent .messageContent{
+    background-color: #FFEBE8;
 }
 
-.AppContent section main .message p{
-    font-size: 18px;
-    font-weight: 400;
-    margin-left: 3vw;
+.AppContent section main .message.message.received .messageContent{
+    background-color: #eeeeee;
 }
+
+/* form to send message */
 
 .AppContent section form{
     display: flex;
@@ -118,13 +159,13 @@
     bottom: 0;
     width: 100%;
 
-    background-color: #ffffff;
+    background-color: #F8F5F5;
     
     padding: 5px;
 }
 
 .AppContent section form input{
-    width: 50vw;
+    width: 80vw;
     height: 6vh;
     border: 1px solid #000;
     border-radius: 5px;
@@ -132,12 +173,19 @@
 }
 
 .AppContent section form button{
-    height: 6vh;
-    border: 1px solid #000;
-    border-radius: 5px;
     margin-left: 5px;
-    padding: 8px;
+    border: none;
 
-    background-color: #45814a;
     cursor: pointer;
+}
+
+.AppContent section form button img{
+    height: 6vh;
+}
+
+@media(min-width: 800px){
+    .AppContent section main{
+        width: 80%;
+        margin: auto;
+    }
 }

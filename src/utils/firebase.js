@@ -1,13 +1,13 @@
 import firebase from 'firebase/app';
 
 firebase.initializeApp({
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_APP_ID,
-    measurementId: process.env.REACT_APP_MEASURUMENT
+    apiKey: "AIzaSyCR9vpZpC4KELHzRtf3_uCd7PLnTcXhshk",
+    authDomain: "realtimechat-c2cf7.firebaseapp.com",
+    projectId: "realtimechat-c2cf7",
+    storageBucket: "realtimechat-c2cf7.appspot.com",
+    messagingSenderId: "276136820376",
+    appId: "1:276136820376:web:fc448581aed69000d8daed",
+    measurementId: "G-D119Y7R7GY"
 })
 
 export default firebase

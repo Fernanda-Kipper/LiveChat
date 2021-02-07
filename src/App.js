@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './styles/App.css';
+
 import googleIcon from './assets/google.svg'
+import logoImg from './assets/logo.svg'
+import sendImg from './assets/send.svg'
 
 import firebase from './utils/firebase';
 import 'firebase/firestore';
@@ -17,11 +20,21 @@ function App() {
   return (
     <div className="AppContent">
       <header>
-        <h1>Live Chat 📡</h1>
-        {user ? <SignOut/> : null}
+        {user ? (
+        <>
+          <img src={logoImg} alt="Logo"/>
+          <SignOut/>
+        </>
+        ) : null}
       </header>
       <section>
-        {user ? <ChatRoom /> : <SignIn />}
+        {user ? <ChatRoom /> : (
+          <div className="landing">
+            <img src={logoImg} alt="Logo"/>
+            <h2>Live Chat, converse com estranhos!</h2>
+            <SignIn />
+          </div>
+        )}
       </section>
     </div>
   );
@@ -90,9 +103,11 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Diga algo" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Fale o que está pensando" />
 
-      <button type="submit" disabled={!formValue}>Enviar 📲</button>
+      <button type="submit" disabled={!formValue}>
+        <img src={sendImg} alt="Enviar"/>
+      </button>
 
     </form>
   </>)
@@ -110,7 +125,9 @@ function ChatMessage(props) {
         <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt="foto de perfil"/>
         <h2>{username}</h2>
       </div>
-      <p>{text}</p>
+      <div className="messageContent">
+        <p>{text}</p>
+      </div>
     </div>
   </>)
 }
