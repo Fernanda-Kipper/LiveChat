@@ -1,5 +1,7 @@
 <img src="./src/assets/logoBlack.svg" width="400">
 
+[![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)](LICENSE)
+
 # O projeto 📡
 
 O Projeto consiste em um Live Chat de canal único construído em React utilizando serviços Firebase. 
