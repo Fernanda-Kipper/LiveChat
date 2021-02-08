@@ -101,6 +101,7 @@
 .AppContent section main .message{
     display: flex;
     flex-direction: column;
+    min-height: 60px;
 
     margin: 5px;
 }
@@ -139,6 +140,11 @@
 
 .AppContent section main .message.sent{
     align-self: flex-end;
+}
+
+.AppContent section main .message.sent .messageHeader{
+    align-self: flex-end;
+    flex-direction: row-reverse;
 }
 
 .AppContent section main .message.sent .messageContent{
