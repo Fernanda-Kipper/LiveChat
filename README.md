@@ -2,7 +2,7 @@
 
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)](LICENSE)
 
-# O projeto 📡
+## O Projeto ℹ
 
 O Projeto consiste em um Live Chat de canal único construído em React utilizando serviços Firebase. 
 
@@ -16,13 +16,13 @@ Foi utilizado o serviço Cloud Firestore do Google Firebase para armazenadar os 
 
 ## Rodando localmente
 
-Para rodar o Talk It localmente você deve:
+Para rodar o Talk It localmente em modo desenvolvimento você deve:
 
 ```
 git clone https://github.com/Fernanda-Kipper/LiveChat.git
 cd project_name
 npm install
-npm start
+npm run-script dev
 ```
 
 No local de npm você pode utilizar o package manager de sua preferência
