@@ -54,5 +54,5 @@ Não é recomendado armazenar suas chaves de acesso a API no lado do cliente, ne
 
 <h2 id="license">Licença</h2>
 
-Esse projeto está sobre a licença [MIT](LICENSE)
+Esse projeto está sob a licença [MIT](LICENSE)
 
