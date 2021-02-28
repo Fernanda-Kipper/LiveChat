@@ -9,6 +9,17 @@ O Projeto consiste em um Live Chat de canal único construído em React utilizan
 
 📌 [Visite clicando aqui](https://live-chat-one.vercel.app/)
 
+<img src="landing.png" width="500px">
+
+## Tecnologias
+
+- React JS
+
+- Google Firebase
+
+- JavaScript
+
+- HTML e CSS
 
 ## Como foi feito?
 
