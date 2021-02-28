@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/github/license/day8/re-frame.svg)](LICENSE)
 
-## O Projeto ℹ
+## O Projeto
 
 O Projeto consiste em um Live Chat de canal único construído em React utilizando serviços Firebase. 
 
