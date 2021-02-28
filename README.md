@@ -12,7 +12,7 @@
 
 O Projeto consiste em um Live Chat de canal único construído em React utilizando serviços Firebase. 
 
-📌 [Visite clicando aqui](https://live-chat-one.vercel.app/)
+<h3 align="center"><a href="https://live-chat-one.vercel.app/">💻 Visite clicando aqui</a></h3>
 
 <p align="center">
   <img src="Talkit!.png" width="500px">
