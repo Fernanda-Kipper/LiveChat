@@ -8,17 +8,15 @@
  <a href="#license">License</a>
 </p>
 
-[![License](https://img.shields.io/github/license/day8/re-frame.svg)](LICENSE)
-
 <h2 id="project" >Talk It!</h2>
 
 O Projeto consiste em um Live Chat de canal único construído em React utilizando serviços Firebase. 
 
 📌 [Visite clicando aqui](https://live-chat-one.vercel.app/)
 
-<span align="center">
+<p align="center">
   <img src="Talkit!.png" width="500px">
-</span>
+</p>
 
 <h2 id="tech" >Tecnologias</h2>
 
